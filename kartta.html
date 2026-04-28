@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/lomakkeet.css">
+    <link rel="icon" href="../pictures/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -36,7 +37,7 @@
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="list.html">List</a>
+                        <a class="nav-link" href="list.html">Grid</a>
                     </li>
                     </li>
                     <li class="nav-item">
@@ -59,76 +60,20 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid align-items-center">
-        <h1>Lomake</h1>
-    <form>
-        <table>
-            <tr>
-                <td>
-                    <fieldset>
-                        <legend>Henkilötiedot</legend><!--Tekee viivan sisälle tekstin-->
-                        <table>
-                            <tr>
-                                <td><label for="fname">Etunimi</label></td>
-                                <td><input type="text" id="fname"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="lname">Sukunimi</label></td>
-                                <td><input type="text" id="lname"></td>
-                            </tr>
-                            <tr>
-                                <td><label for="password">Salasana</label></td>
-                                <td><input type="password" id="password"></td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </td>
-                <td>
-                    <fieldset>
-                        <legend>Valinta</legend>
-                        <table>
-                            <tr>
-                                <td><input type="checkbox" id="emailselect"></td>
-                                <td><label for="emailselect">Sähköposti</label></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" id="telselect"></td><!--tekee pienet boxit-->
-                                <td><label for="telselect">Puhelin</label></td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <fieldset>
-                        <table>
-                            <tr>
-                                <td colspan="2"><!--tekee boxin leveyden kahteen sarakkeeseen-->
-                                    <textarea rows="10" cols="50"></textarea><!--tekee tekstikentän-->
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <input type="file" id="file"><!--tekee valitse tiedosto napin-->
-                                </td>
+    <div class="container-fluid w-75 p-5 bg-dark text-white">
+        <h1>Google Maps</h1>
+        <input type="text" id="search-address">
+        <input type="text" id="search-city">
+        <button type="button" onclick="showMap()">hae</button>
 
 
-                                <td>
-                                    <input type="submit" value="Lähetä"><!--tekee lähetä napin-->
-                                </td>
-                            </tr>
-                        </table>
-
-                    </fieldset>
-                </td>
-            </tr>
-        </table>
-    </form>
-
+        <iframe id="map-frame" width="100%" height="100%" frameBorder="0">
+        </iframe>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="js/kartta.js"></script>
 </body>
 
 </html>
