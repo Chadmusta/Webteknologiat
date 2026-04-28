@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lomakkeet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Laskin.html">Laskin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kartta.html">Kartta</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kuvakaruselli.html">Karuselli</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="list.html">List</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ajax.html">Ajax</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="true">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://github.com/chadmusta?tab=repositories">GitHub</a>
+                            </li>
+
+                            <li><a class="dropdown-item" href="lomakkeet.html">Lomake</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid align-items-center">
+        <h1>Lomake</h1>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Henkilötiedot</legend><!--Tekee viivan sisälle tekstin-->
+                        <table>
+                            <tr>
+                                <td><label for="fname">Etunimi</label></td>
+                                <td><input type="text" id="fname"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="lname">Sukunimi</label></td>
+                                <td><input type="text" id="lname"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Salasana</label></td>
+                                <td><input type="password" id="password"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Yhteystiedot</legend>
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" id="emailselect"></td>
+                                <td><label for="emailselect">Sähköposti</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="telselect"></td><!--tekee pienet boxit-->
+                                <td><label for="telselect">Puhelin</label></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <table>
+                            <tr>
+                                <td colspan="2"><!--tekee boxin leveyden kahteen sarakkeeseen-->
+                                    <textarea rows="10" cols="50"></textarea><!--tekee tekstikentän-->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="file" id="file"><!--tekee valitse tiedosto napin-->
+                                </td>
+
+
+                                <td>
+                                    <input type="submit" value="Lähetä"><!--tekee lähetä napin-->
+                                </td>
+                            </tr>
+                        </table>
+
+                    </fieldset>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
