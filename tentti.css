@@ -1,0 +1,29 @@
+
+fieldset > div {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+
+body {
+    background-color:olive
+}
+
+fieldset {
+  margin: 20px;
+  padding: 0 10px 10px;
+  border: 1px dashed #00f;
+  border-radius: 8px;
+  padding-top: 10px;
+  
+}
+
+.info{
+            display: none;
+        }
+        .icon:hover ~ .info{
+            display: block;
+        }
