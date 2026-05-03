@@ -1,0 +1,90 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+    grid-template-columns: 100px auto;
+    height: 100vh;
+    grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+}
+.header{
+    grid-area: header;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sidebar{
+    grid-area: sidebar;
+    background-color: lightblue;
+}
+.main{
+    grid-area: main;
+    background-color: pink;
+    display: flex;
+    flex-direction: row;
+    justify-content: wrap;
+}
+.footer{
+    grid-area: footer;
+    background-color: lightblue;
+}
+
+.logo{
+    width: 75%;
+    height: 70%;
+}
+.card{
+    border-width: 2px;
+    border-color: lightblue;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: white;
+    min-width: 300px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 30px auto 30px;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+            "card-header card-header"
+            "card-main card-main"
+            "card-left card-right";
+}
+
+.card-header{
+    grid-area: card-header;
+    text-align: center;
+    margin: 0px;
+
+}
+
+.card-main{
+    grid-area: card-main;
+}
+
+.card-left{
+    grid-area: card-left;
+}
+
+.card-right{
+    grid-area: card-right;
+    justify-self: end;
+}
+
+button.OK{
+    background-color: green;;
+}
+
+button.cancel{
+    background-color: red;
+}
+
+button{
+    width: 60px;
+    height: 30px;
+}
